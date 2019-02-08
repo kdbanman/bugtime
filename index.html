@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>AutoGlot</title>
+  <title>bugtime</title>
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
   <link rel="stylesheet" href="src/css/main.css">
 
@@ -10,26 +10,24 @@
 
 <body>
   <div class="box">
-    <h1>Autoglot</h1>
+    <h1>bugtime</h1>
 
-    <h4 class="fixed-text">Your Talk Title:</h4>
-    <h2 id="talk-name"></h2>
+    <h2 id="bug-name"></h2>
 
-    <h4 class="fixed-text">The format of the talk is: </h4>
-    <h3 id="talk-type"></h3>
-
-    <div id="button">Click here to generate a new topic!</div>
+    <div id="button">New bug name!</div>
   </div>
 
   <div class="what-is-this">
     <h3>What is this?</h4>
       <p>
-        This is a small LSTM recurrent neural network trained on the <a href="https://arxiv.org/abs/1706.09485">CASCONet dataset</a>.
-        It generates a conference topic character by character, <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">as popularized by Andrej Karpathy</a>.
+        This is a small LSTM recurrent neural network.
+        It generates a bug name character by character.
+        The model was trained with <a href="http://kdbanman.com/recurrentjs/">this tool</a> by <a href="http://kdbanman.com">this person</a>.
+        Learn about the technique from <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">Andrej Karpathy</a>.
       </p>
   </div>
 
-  <script src="models/thick_model.js"></script>
+  <script src="models/model.js"></script>
   <script src="src/external/recurrent.js"></script>
   <script src="src/rnn_mri_train.js"></script>
   <script src="src/rnn_mri_generate.js"></script>
